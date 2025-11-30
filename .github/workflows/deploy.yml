@@ -1,0 +1,36 @@
+name: Deploy to GitHub Pages
+
+on:
+  # 当推送到 main 分支时触发
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # 允许 Action 写入代码（发布必需）
+
+    steps:
+      - name: Checkout 提取代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js 设置 Node 环境
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Deps 安装依赖
+        run: npm install
+
+      - name: Build 构建网站
+        run: npm run docs:build
+
+      - name: Deploy 发布到 gh-pages 分支
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/.vuepress/dist
