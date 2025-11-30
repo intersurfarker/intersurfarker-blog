@@ -14,7 +14,7 @@ import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
 export default defineUserConfig({
-  base: '/blog/',
+  base: '/intersurfarker-blog/',
   lang: 'zh-CN',
   title: 'InterSurfArker',
   description: 'InterSurfArker',
