@@ -5,17 +5,43 @@ createTime: 2025-11-19
 aside: false
 comments: true
 ---
-## 👋 嗨，我是 [你的名字]
+## 自我介绍
 
-这里是我的个人博客，我是一名前端开发者/学生/技术爱好者。
+你好，我是InterSurfArker，在某些较为私密的地方也会使用BlitzArk作为网名。
 
-### 🛠 技术栈
+我是一名25级的物理系本科生，目前在北京大学就读。目前我还没有确定我的研究方向，不过对**大气与海洋**方向较为感兴趣。
 
-- HTML / CSS / JavaScript
-- Vue.js / VuePress
-- Node.js
+除了物理之外，我的爱好还包括：
+1. **动画评论**。这是我的[bangumi账号](https://bgm.tv/user/915757)。平时我会在博客中上传一些动画评论或是演出作画笔记。
+2. **音乐**。目前我正在学习电吉他，可能会在博客中上传一些自己制作的扒谱等。
+3. **偶像文化**。我主要关注的二偶企划是BanG Dream!和偶像大师，包括其三次元展开。此外，我对Call&Response文化相当钟爱，平时也会参加アニクラ活动。
+
+### 作为アイマスＰ
+> もう伏目がちな昨日なんていらない
+>
+> 今日これから始まる私の伝説
+
+我常使用BlitzArkP的名义参加偶像大师的衍生活动，欢迎和我交换名片！
+
+我目前关注的子企划主要是本家和百万现场，同时对其它子企划也有着浓厚的兴趣，正在朝着みんマス而努力。以下是我喜欢的/担当的偶像：
+- 765PRO ALLSTARS+　箱推し
+- 天海春香
+- 最上静香
+- 櫻守歌織
+- 真壁瑞希
+- エミリー
+- 松田亜里沙
+
+<div style="text-align: center; font-size: 1.5rem; font-weight: bold; margin: 2rem 0;">
+  アイドル＝憧れ
+
+  憧れは、終わらない
+</div>
+
+偶像大师对我而言是具有特殊意义的存在，所以これからもアイマスですよ、アイマス！
 
 ### 📬 联系我
 
-- Email: your-email@example.com
-- GitHub: https://github.com/your-username
+- Email: <vvinformation@163.com>
+- QQ: 1663098740
+- BiliBili: <https://space.bilibili.com/352596422>

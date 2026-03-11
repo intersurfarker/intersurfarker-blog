@@ -23,7 +23,8 @@ export default defineThemeConfig({
   appearance: true,  // 配置 深色模式
 
   social: [
-    { icon: 'github', link: 'https://space.bilibili.com/352596422' },
+    { icon: 'github', link: 'https://github.com/intersurfarker/intersurfarker-blog' },
+    { icon: 'bilibili', link: 'https://space.bilibili.com/352596422' },
   ],
   // navbarSocialInclude: ['github'], // 允许显示在导航栏的 social 社交链接
   // aside: true, // 页内侧边栏， 默认显示在右侧
@@ -59,64 +60,24 @@ export default defineThemeConfig({
 
   navbar: [
       // 类型 A: 普通链接
-      { text: '首页', link: '/', icon: 'material-symbols:home-outline' },
-      { text: '博客', link: '/blog/', icon: 'material-symbols:article-outline' },
+      { text: '博客', link: '/', icon: 'material-symbols:article-outline' },
 
       // 类型 B: 下拉菜单 (使用 items)
       {
         text: '笔记',
         icon: 'material-symbols:code-blocks-outline',
         items: [
-          // 子菜单项
-          {
-            text: '物理相关',
-            items: [ // 支持多级嵌套（分组）
-               { text: '理论物理基础', link: '/notes/fundamental-theoretical-physics/' },
-               { text: '普通物理实验', link: '/notes/experiment/' }
-            ]
-          },
-          {
-            text: '数学相关',
-            items: [ // 支持多级嵌套（分组）
-               { text: '线性代数', link: '/notes/linear-algebra/' },
-               { text: '数学物理方法', link: '/notes/mathematical-physics/' }
-            ]
-          },
-          {
-            text: '其它',
-            items: [ // 支持多级嵌套（分组）
-               { text: '计算概论', link: '/notes/cs101/' },
-            ]
-          }
+          { text: '理论物理基础', link: '/notes/fundamental-theoretical-physics/' },
+          { text: '普通物理实验', link: '/notes/experiment/' },
+          { text: '高等数学', link: '/notes/advanced-mathematics/' },
+          { text: '数学物理方法', link: '/notes/mathematical-physics-methods/' },
         ]
       },
-
-      {
-        text: 'Call Guide',
-        icon: 'material-symbols:folder-open-outline',
-        items: [
-          {
-            text: '偶像大师',
-            items: [ // 支持多级嵌套（分组）
-               { text: '本家/765AS', link: '/call/765as/' },
-               { text: '百万现场', link: '/call/765ms/' },
-               { text: '学园偶像大师', link: '/call/gakumaster/' }
-            ]
-          },
-          {
-            text: 'BanG Dream!',
-            items: [ // 支持多级嵌套（分组）
-               { text: 'Poppin\' Party', link: '/call/poppinparty/' },
-            ]
-          },
-        ]
-      },
-
       // 类型 D: 友情链接 (Dropdown 示例)
       {
-        text: '友情链接',
+        text: '关于我',
         icon: 'material-symbols:more-horiz',
-        link: '/friend/'
+        link: '/about/'
       },
     ],
     collections: [
@@ -125,10 +86,32 @@ export default defineThemeConfig({
       dir: 'blog',
       title: '博客',
     },
+
     {
         type: 'doc',
         dir: '/notes/fundamental-theoretical-physics/',
         title: '理论物理基础',
+        sidebar: 'auto', // 自动生成导航结构
+        sidebarCollapsed: false, // 折叠状态：true-折叠 false-展开
+    }, 
+    {
+        type: 'doc',
+        dir: '/notes/experiment/',
+        title: '普通物理实验',
+        sidebar: 'auto', // 自动生成导航结构
+        sidebarCollapsed: false, // 折叠状态：true-折叠 false-展开
+    },
+    {
+        type: 'doc',
+        dir: '/notes/advanced-mathematics/',
+        title: '高等数学',
+        sidebar: 'auto', // 自动生成导航结构
+        sidebarCollapsed: false, // 折叠状态：true-折叠 false-展开
+    },
+        {
+        type: 'doc',
+        dir: '/notes/mathematical-physics-methods/',
+        title: '数学物理方法',
         sidebar: 'auto', // 自动生成导航结构
         sidebarCollapsed: false, // 折叠状态：true-折叠 false-展开
     }
@@ -151,5 +134,10 @@ export default defineThemeConfig({
   //   postList: true,    // 启用 博客文章列表过渡动画
   //   appearance: 'fade',  // 启用 深色模式切换过渡动画, 或配置过渡动画类型
   // },
+  autoFrontmatter: {
+    title: true, // 自动生成标题
+    createTime: true, // 自动生成创建时间
+    permalink: true, // 自动生成永久链接
+  }
 
 })

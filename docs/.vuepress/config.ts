@@ -86,6 +86,7 @@ export default defineUserConfig({
     /* 文章字数统计、阅读时间，设置为 false 则禁用 */
     // readingTime: true,
 
+    
     /**
      * markdown
      * @see https://theme-plume.vuejs.press/config/markdown/
@@ -164,5 +165,16 @@ export default defineUserConfig({
      * @see https://theme-plume.vuejs.press/guide/features/encryption/
      */
     // encrypt: {},
+    plugins: {
+      markdownMath: {
+        type: 'katex',
+        // 在这里定义你的全局宏
+        macros: {
+          "\\dd": "\\mathrm{d}",     // 定义微分符号的快捷键
+          "\\ee": "\\mathrm{e}",     // （可选）额外赠送：定义自然对数底数的快捷键
+          "\\ii": "\\mathrm{i}",      // （可选）额外赠送：定义虚数单位的快捷键
+        }
+      }
+    }
   }),
 })
