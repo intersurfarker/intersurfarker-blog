@@ -71,6 +71,7 @@ export default defineThemeConfig({
           { text: '普通物理实验', link: '/notes/experiment/' },
           { text: '高等数学', link: '/notes/advanced-mathematics/' },
           { text: '数学物理方法', link: '/notes/mathematical-physics-methods/' },
+          { text: '统计数据分析', link: '/notes/statistical-data-analysis/' },
         ]
       },
       // 类型 D: 友情链接 (Dropdown 示例)
@@ -108,10 +109,17 @@ export default defineThemeConfig({
         sidebar: 'auto', // 自动生成导航结构
         sidebarCollapsed: false, // 折叠状态：true-折叠 false-展开
     },
-        {
+      {
         type: 'doc',
         dir: '/notes/mathematical-physics-methods/',
         title: '数学物理方法',
+        sidebar: 'auto', // 自动生成导航结构
+        sidebarCollapsed: false, // 折叠状态：true-折叠 false-展开
+    },
+    {
+        type: 'doc',
+        dir: '/notes/statistical-data-analysis/',
+        title: '统计数据分析',
         sidebar: 'auto', // 自动生成导航结构
         sidebarCollapsed: false, // 折叠状态：true-折叠 false-展开
     }
