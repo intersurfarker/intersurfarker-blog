@@ -32,13 +32,6 @@ comments: true
 - エミリー
 - 松田亜里沙
 
-<div style="text-align: center; font-size: 1.5rem; font-weight: bold; margin: 2rem 0;">
-  アイドル＝憧れ
-
-  憧れは、終わらない
-</div>
-
-偶像大师对我而言是具有特殊意义的存在，所以これからもアイマスですよ、アイマス！
 
 ### 📬 联系我
 
