@@ -24,10 +24,12 @@ jobs:
           cache: 'npm'
 
       - name: Install Deps 安装依赖
-        run: npm install
+        run: npm ci
 
       - name: Build 构建网站
         run: npm run docs:build
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
 
       - name: Deploy 发布到 gh-pages 分支
         uses: peaceiris/actions-gh-pages@v3
