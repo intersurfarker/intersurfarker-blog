@@ -70,7 +70,6 @@ export default defineThemeConfig({
           { text: '理论物理基础', link: '/notes/fundamental-theoretical-physics/' },
           { text: '普通物理实验', link: '/notes/experiment/' },
           { text: '高等数学', link: '/notes/advanced-mathematics/' },
-          { text: '数学物理方法', link: '/notes/mathematical-physics-methods/' },
           { text: '统计数据分析', link: '/notes/statistical-data-analysis/' },
         ]
       },
@@ -106,13 +105,6 @@ export default defineThemeConfig({
         type: 'doc',
         dir: '/notes/advanced-mathematics/',
         title: '高等数学',
-        sidebar: 'auto', // 自动生成导航结构
-        sidebarCollapsed: false, // 折叠状态：true-折叠 false-展开
-    },
-      {
-        type: 'doc',
-        dir: '/notes/mathematical-physics-methods/',
-        title: '数学物理方法',
         sidebar: 'auto', // 自动生成导航结构
         sidebarCollapsed: false, // 折叠状态：true-折叠 false-展开
     },
